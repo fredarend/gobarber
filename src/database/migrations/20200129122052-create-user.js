@@ -4,7 +4,7 @@ module.exports = {
       id: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        autoIncremet: false,
+        autoIncrement: true,
         primaryKey: true
       },
       name: {
@@ -22,7 +22,7 @@ module.exports = {
       },
       provider: {
         type: Sequelize.BOOLEAN,
-        default: false,
+        defaultValue: false,
         allowNull: false
       },
       created_at: {
