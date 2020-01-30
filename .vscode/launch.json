@@ -6,13 +6,13 @@
   "configurations": [
     {
       "type": "node",
-      "request": "attach",
+      "request": "launch",
       "name": "Launch Program",
-      "protocol": "inspector",
-      "restart":true,
       "skipFiles": [
         "<node_internals>/**"
       ],
+      "sourceMaps": true,
+      "program": "${workspaceFolder}\\src/app.js"
     }
   ]
 }
