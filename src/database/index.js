@@ -24,10 +24,10 @@ class Database {
   }
 
   mongo() {
-    this.mongoConecction = mongoose.connect(
-      'mongodb://localhost:27017/gobarber',
-      { useNewUrlParser: true, useFindAndModify: true }
-    );
+    this.mongoConecction = mongoose.connect(process.env.MONGO_URL, {
+      useNewUrlParser: true,
+      useFindAndModify: true
+    });
   }
 }
 
